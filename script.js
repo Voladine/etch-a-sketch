@@ -292,3 +292,15 @@ mainContainer.innerHTML = `
     <div class="column"></div>
 </div>
 `
+const rows = document.querySelectorAll(".row")
+const columns = document.querySelectorAll(".column")
+
+// Add mouseover event for all divs
+for (let i = 0; i < columns.length; i++) {
+    columns[i].addEventListener('mouseover', colorColumn)
+}
+
+// Change the color of targeted div
+function colorColumn(cursor) {
+    cursor.target.style.backgroundColor = "blue";
+}
