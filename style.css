@@ -6,19 +6,20 @@ body {
     text-align: center;
 }
 
-.mainContainer {
+.grid {
     margin: auto;
-    width: 480px;
+    height: 500px;
+    width: 500px;
     border: solid black 2px;
+    display: grid;
 }
 
-.row {
-    display: flex;
-    height: 30px;
+.btnDiv {
+    text-align: center;
+    margin-top: 20px;
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
-    width: 30px;
+.box {
+    margin: 0px;
+    padding: 0px;
 }
